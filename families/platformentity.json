@@ -1,0 +1,17 @@
+{
+	"name": "PlatformEntity",
+	"plugin-id": "Sprite",
+	"sid": 351611496664961,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 884118849069588
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Player"
+	]
+}

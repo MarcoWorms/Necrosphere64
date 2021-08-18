@@ -1,0 +1,157 @@
+{
+	"name": "Main",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Camera",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 438308499184676,
+							"parameters": {
+								"x": "32+ 64* floor(Player.X/64)",
+								"y": "32+ 64* floor(Player.Y/64)"
+							}
+						}
+					],
+					"sid": 228311103276438
+				}
+			],
+			"sid": 607370120226719
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlatformEntity",
+					"sid": 791039648290243,
+					"parameters": {
+						"object": "Jump"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-y",
+					"objectClass": "PlatformEntity",
+					"sid": 119394032031944,
+					"parameters": {
+						"y": "Jump.Y - 3"
+					}
+				},
+				{
+					"id": "set-vector-y",
+					"objectClass": "PlatformEntity",
+					"sid": 620149403620262,
+					"behaviorType": "Platform",
+					"parameters": {
+						"vector-y": "-PlatformEntity.Platform.JumpStrength"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jump",
+					"sid": 127286092027342,
+					"parameters": {
+						"animation": "\"Active\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 325835597938499
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Jump",
+					"sid": 176490600178175,
+					"parameters": {
+						"animation": "\"Active\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Jump",
+					"sid": 327504400485282,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 874069995202700
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "PlatformEntity",
+					"sid": 248788949350214,
+					"parameters": {
+						"object": "DestroyPlatformEntity"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PlatformEntity",
+					"sid": 546651098053585
+				}
+			],
+			"sid": 115875556097858
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 149071354303638,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				},
+				{
+					"id": "is-on-screen",
+					"objectClass": "TractorBeam",
+					"sid": 500434170778936
+				},
+				{
+					"id": "for-each",
+					"objectClass": "System",
+					"sid": 122715356618273,
+					"parameters": {
+						"object": "TractorBeam"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-image-offset-y",
+					"objectClass": "TractorBeam",
+					"sid": 657376906292923,
+					"parameters": {
+						"offset-y": "(TractorBeam.ImageOffsetY - 1) % 4"
+					}
+				}
+			],
+			"sid": 804159172986272
+		}
+	],
+	"sid": 988614652276584
+}

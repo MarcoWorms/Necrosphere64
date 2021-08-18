@@ -1,0 +1,11 @@
+{
+	"name": "DestroyPlatformEntity",
+	"plugin-id": "Sprite",
+	"sid": 629927023509040,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"Lava"
+	]
+}
