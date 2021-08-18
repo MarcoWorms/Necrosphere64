@@ -1,6 +1,6 @@
 # [Play Necrosphere64](https://worms.itch.io/necrosphere64)
 
-Necrosphere64 [construct 3](construct.net) source files
+Necrosphere64 [construct 3](http://construct.net) source files
 
 ---
 
