@@ -23,6 +23,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "NoSave",
 			"name": "No save",
@@ -48,6 +56,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Physics",
+			"name": "Physics",
+			"author": "Scirra",
+			"version": "r251.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -65,7 +81,8 @@
 			"Jump",
 			"Lava",
 			"WallDestructible",
-			"TractorBeam"
+			"TractorBeam",
+			"Keyboard"
 		],
 		"subfolders": []
 	},

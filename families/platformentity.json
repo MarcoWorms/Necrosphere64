@@ -8,6 +8,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 884118849069588
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 538129906101925
 		}
 	],
 	"effectTypes": [],

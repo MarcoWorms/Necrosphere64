@@ -2,6 +2,28 @@
 	"name": "Main",
 	"events": [
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 465091413369231
+				}
+			],
+			"actions": [
+				{
+					"id": "set-world-gravity",
+					"objectClass": "PlatformEntity",
+					"sid": 258931418497481,
+					"behaviorType": "Physics",
+					"parameters": {
+						"gravity": "0"
+					}
+				}
+			],
+			"sid": 475307342049762
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Camera",
@@ -31,6 +53,18 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 509763302750818
+				}
+			],
+			"actions": [],
+			"sid": 125326750839352
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "PlatformEntity",
 					"sid": 791039648290243,
@@ -46,15 +80,6 @@
 					"sid": 119394032031944,
 					"parameters": {
 						"y": "Jump.Y - 3"
-					}
-				},
-				{
-					"id": "set-vector-y",
-					"objectClass": "PlatformEntity",
-					"sid": 620149403620262,
-					"behaviorType": "Platform",
-					"parameters": {
-						"vector-y": "-PlatformEntity.Platform.JumpStrength"
 					}
 				},
 				{
@@ -151,6 +176,112 @@
 				}
 			],
 			"sid": 804159172986272
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "PlatformEntity",
+					"sid": 935000095178029,
+					"parameters": {
+						"object": "TractorBeam"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 674792603632594,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TractorBeam",
+							"sid": 961813449514819,
+							"parameters": {
+								"instance-variable": "speedX",
+								"comparison": 1,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 839674623893797
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "TractorBeam",
+							"sid": 785370856089463,
+							"parameters": {
+								"instance-variable": "speedY",
+								"comparison": 1,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 976092072771881
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 458531202438978,
+					"parameters": {
+						"key": 65
+					}
+				}
+			],
+			"actions": [],
+			"sid": 632814592126206
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 916122458003533,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [],
+			"sid": 386540110563386
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 537636459597307,
+					"parameters": {
+						"key": 65
+					},
+					"isInverted": true
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 380875930704244,
+					"parameters": {
+						"key": 68
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [],
+			"sid": 628358124474143
 		}
 	],
 	"sid": 988614652276584
