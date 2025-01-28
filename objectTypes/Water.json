@@ -1,0 +1,36 @@
+{
+	"name": "Water",
+	"plugin-id": "TiledBg",
+	"sid": 701540045588582,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Tag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 609135563770328
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 789028200326047
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 8,
+		"height": 8,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 3526197,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

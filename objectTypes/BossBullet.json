@@ -1,0 +1,65 @@
+{
+	"name": "BossBullet",
+	"plugin-id": "Sprite",
+	"sid": 220881570755763,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "PIERCING",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 811372159479731
+		},
+		{
+			"name": "BOUNCY",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 328695866191322
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 451836156430610
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 637118380086326
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6155863,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 663954710267722,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

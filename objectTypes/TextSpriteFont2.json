@@ -1,0 +1,33 @@
+{
+	"name": "TextSpriteFont2",
+	"plugin-id": "Spritefont2",
+	"sid": 936575362212092,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 738210225119291
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 382483057671083
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 40,
+		"height": 56,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6080555,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

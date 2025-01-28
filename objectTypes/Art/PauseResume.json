@@ -1,0 +1,51 @@
+{
+	"name": "PauseResume",
+	"plugin-id": "Sprite",
+	"sid": 384360397404659,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 28,
+						"height": 6,
+						"originX": 0.4642857142857143,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4608984,
+						"collisionPoly": {
+							"points": [
+								0.07142857142857142,
+								0.3333333333333333,
+								0.5714285714285714,
+								0.3333333333333333,
+								0.5714285714285714,
+								1,
+								0.07142857142857142,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 463159827159265,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

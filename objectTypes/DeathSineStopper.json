@@ -1,0 +1,30 @@
+{
+	"name": "DeathSineStopper",
+	"plugin-id": "TiledBg",
+	"sid": 123262773809453,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ActivateTag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 381542554776925
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1,
+		"height": 1,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 1028399,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

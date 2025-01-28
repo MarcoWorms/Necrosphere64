@@ -1,0 +1,61 @@
+{
+	"name": "TextTriggerToll",
+	"plugin-id": "Sprite",
+	"sid": 516572071622187,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "text",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 916106647328770
+		},
+		{
+			"name": "speed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 949548706020640
+		},
+		{
+			"name": "Toll",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 679331103748299
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 2,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3011370,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 250443252769650,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

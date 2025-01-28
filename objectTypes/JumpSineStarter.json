@@ -1,0 +1,30 @@
+{
+	"name": "JumpSineStarter",
+	"plugin-id": "TiledBg",
+	"sid": 217076246131923,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ActivateTag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 109345132881477
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1,
+		"height": 1,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 7817279,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

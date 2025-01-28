@@ -1,0 +1,55 @@
+{
+	"name": "Wall",
+	"plugin-id": "Sprite",
+	"sid": 189351533550874,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 738642651601226
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 603633461615912
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "scanlines",
+			"name": "ScanLines"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2946736,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 936809597021207,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

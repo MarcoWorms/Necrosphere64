@@ -1,0 +1,48 @@
+{
+	"name": "TractorBeam",
+	"plugin-id": "TiledBg",
+	"sid": 931726098447472,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "speedX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 566095263220146
+		},
+		{
+			"name": "speedY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 578809563800430
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 495523849180686
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "noise",
+			"name": "Noise"
+		}
+	],
+	"image": {
+		"width": 4,
+		"height": 4,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 8631551,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

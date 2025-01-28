@@ -1,0 +1,142 @@
+{
+	"name": "Death2MovingLavaDiamond",
+	"plugin-id": "Sprite",
+	"sid": 632659899439104,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "distance",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 910770594142017
+		},
+		{
+			"name": "enabledBySaveUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 263366057858269
+		},
+		{
+			"name": "startX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 423013048163715
+		},
+		{
+			"name": "startY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 521162409304973
+		},
+		{
+			"name": "INVERTED",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 956804875304831
+		},
+		{
+			"name": "Tag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 416462954202116
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 189752562881607
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 321784791083158
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 15,
+						"originX": 0.4666666666666667,
+						"originY": 0.4666666666666667,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3309542,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								1,
+								0.5,
+								0.5,
+								1,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 430712645302786,
+				"name": "indestructible",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 10,
+						"originX": 0.45,
+						"originY": 0.45,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1635374,
+						"collisionPoly": {
+							"points": [
+								0.45,
+								0.45,
+								0.55,
+								0.45,
+								0.55,
+								0.55,
+								0.45,
+								0.55
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 572427485842519,
+				"name": "destructible",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

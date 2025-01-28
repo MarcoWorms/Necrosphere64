@@ -1,0 +1,193 @@
+{
+	"name": "biggerminimap",
+	"plugin-id": "Sprite",
+	"sid": 320686712876556,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5730800,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4434063,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7455050,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2016637,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6177103,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1970405,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7309526,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 51,
+						"height": 39,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7014423,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.11764705882352941,
+								"y": 0.7692307692307693
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 987493157922060,
+				"name": "Default",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 30
+			}
+		],
+		"subfolders": []
+	}
+}

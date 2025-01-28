@@ -1,0 +1,61 @@
+{
+	"name": "MusicTrigger",
+	"plugin-id": "Sprite",
+	"sid": 418484519298658,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "intro",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 867178494430226
+		},
+		{
+			"name": "loop",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 560876578609574
+		},
+		{
+			"name": "fadein",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 174348137831594
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6071508,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 723000660808912,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 20
+			}
+		],
+		"subfolders": []
+	}
+}

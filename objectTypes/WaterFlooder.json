@@ -1,0 +1,44 @@
+{
+	"name": "WaterFlooder",
+	"plugin-id": "TiledBg",
+	"sid": 747124205343573,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "WaterUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 909605496036921
+		},
+		{
+			"name": "WaterX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 682658614579748
+		},
+		{
+			"name": "WaterY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 252334013362110
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1,
+		"height": 1,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 9657385,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

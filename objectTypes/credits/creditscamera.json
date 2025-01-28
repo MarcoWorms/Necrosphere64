@@ -1,0 +1,58 @@
+{
+	"name": "creditscamera",
+	"plugin-id": "Sprite",
+	"sid": 683402081968107,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ROLLENDED",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 343241637171326
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 382654193549198
+		},
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 651889889482574
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 502302,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 635188022682592,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

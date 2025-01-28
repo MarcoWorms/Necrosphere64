@@ -1,0 +1,30 @@
+{
+	"name": "WaterSineStarter",
+	"plugin-id": "TiledBg",
+	"sid": 241310124965367,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ActivateTag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 405893377452646
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1,
+		"height": 1,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 5795137,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"name": "CheckpointActivatorTrigger",
+	"plugin-id": "Sprite",
+	"sid": 306078636895424,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "CheckpointUID",
+			"type": "number",
+			"desc": "The UID of the checkpoint that this trigger should activate collisions",
+			"show": true,
+			"sid": 797806752827258
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7189731,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 290611804863990,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

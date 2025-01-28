@@ -1,0 +1,79 @@
+{
+	"name": "Door",
+	"plugin-id": "Sprite",
+	"sid": 949316474191042,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "horizontal",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 817776396829927
+		},
+		{
+			"name": "hp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 992872116939889
+		},
+		{
+			"name": "maxHp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 783656233454812
+		},
+		{
+			"name": "multiswitch",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 327705338311102
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 725600815538887
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 604347338206774
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5517219,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 241164582979420,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,118 @@
+{
+	"name": "Death2MovingLava",
+	"plugin-id": "Sprite",
+	"sid": 162484873719074,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "distance",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 261730989069652
+		},
+		{
+			"name": "enabledBySaveUID",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 381650405359773
+		},
+		{
+			"name": "startX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 555958185876897
+		},
+		{
+			"name": "startY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 105981245885871
+		},
+		{
+			"name": "INVERTED",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 636437408500071
+		},
+		{
+			"name": "Tag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 740636079660745
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 398383498891931
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 449895689375136
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4130282,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 685622983419283,
+				"name": "indestructible",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7730124,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 965516133877333,
+				"name": "destructible",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

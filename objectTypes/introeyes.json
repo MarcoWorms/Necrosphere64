@@ -1,0 +1,55 @@
+{
+	"name": "introeyes",
+	"plugin-id": "Sprite",
+	"sid": 745390881016589,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\caiol\\Desktop\\LIXO\\necro64 intro10.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 201514,
+						"collisionPoly": {
+							"points": [
+								0.15625,
+								0.15625,
+								0.84375,
+								0.15625,
+								1,
+								0.5,
+								0.6875,
+								0.6875,
+								0.3125,
+								0.6875,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 675110385203144,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

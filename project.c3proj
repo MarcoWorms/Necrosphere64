@@ -1,0 +1,1157 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 41602,
+	"name": "Necrosphere64",
+	"runtime": "c3",
+	"useWorker": "dom",
+	"bundleAddons": true,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "Browser",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Function",
+			"name": "Function",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "GameRecorder",
+			"name": "Video recorder",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Greenworks",
+			"name": "Greenworks",
+			"author": "Scirra",
+			"bundled": true,
+			"version": "1.0.86.0"
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "Keyboard",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "LocalStorage",
+			"name": "Local storage",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "NoSave",
+			"name": "No save",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Platform",
+			"name": "Platform",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "brightness",
+			"name": "Brightness",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "hsladjust",
+			"name": "Adjust HSL",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "inverse",
+			"name": "Inverse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "noise",
+			"name": "Noise",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "scanlines",
+			"name": "Scan lines",
+			"author": "Scirra",
+			"bundled": false
+		}
+	],
+	"uniqueId": "b3a6in78kco",
+	"objectTypes": {
+		"items": [
+			"Player",
+			"Wall",
+			"End",
+			"Jump",
+			"Keyboard",
+			"Spawn",
+			"DisplayControl",
+			"DisplayTitle",
+			"Death",
+			"Touch",
+			"Gamepad",
+			"DisplayTitle2",
+			"DisplayTitle3",
+			"Browser",
+			"DisplayControl2",
+			"SpriteFontDeaths",
+			"SpriteFontIconDeaths",
+			"SpriteFontIconTime",
+			"SpriteFontTiime",
+			"Death2MovingLava",
+			"DisplayTitle6",
+			"WallTilemap",
+			"GridDev",
+			"TractorBeam",
+			"DevPoint",
+			"WallDestructible",
+			"Bullet",
+			"Fly",
+			"Portal",
+			"Death3LerpBall",
+			"Zap",
+			"TouchLeft",
+			"TouchRight",
+			"Collectible",
+			"Door",
+			"DoorOpener",
+			"Boss",
+			"Audio",
+			"WallThru",
+			"Zombie",
+			"LocalStorage",
+			"Shoot",
+			"Explode",
+			"ZombieKiller",
+			"TextScrollable",
+			"TextSpriteFontBg",
+			"SpriteFont2",
+			"TextTrigger",
+			"Destroyer",
+			"NewGame",
+			"LoadGame",
+			"Sprite3",
+			"Sprite4",
+			"Sprite5",
+			"SpriteFontCollectibles",
+			"SpriteFontIconDeaths2",
+			"BossHpBg",
+			"BossHpFg",
+			"Globals",
+			"VideoRecorder",
+			"AJAX",
+			"Blunderbuss",
+			"TextSpriteFont2",
+			"Teleporter",
+			"Zap2",
+			"DoorCollectibles",
+			"WallDestructibleRegen",
+			"Water",
+			"TextTriggerToll",
+			"InverterSwitch",
+			"WaterFlooder",
+			"prop_sign_exit",
+			"prop_portal",
+			"JumpSineStarter",
+			"DeathSineStarter",
+			"DeathSineStopper",
+			"WaterSineStarter",
+			"Particles",
+			"ParcticlesCollect",
+			"BossBullet",
+			"Text",
+			"ExitToMenu",
+			"ResumeGame",
+			"ConfirmOverride",
+			"CancelOverride",
+			"pausebutton",
+			"FinalCountdown",
+			"RocketJump",
+			"BossBig",
+			"BossSmall",
+			"introtextfield",
+			"introfrontface",
+			"introfar1",
+			"introfar2",
+			"introfar3",
+			"introside",
+			"introgun",
+			"IntroBackground",
+			"introeyes",
+			"introWhiteFlash",
+			"introfar0",
+			"introBlackFade",
+			"necro64Intro",
+			"introfarsad",
+			"introbaldsad",
+			"introdooropening",
+			"introheroclose",
+			"introhug",
+			"introhand",
+			"introleaving",
+			"introTheEnd",
+			"Function",
+			"introtextfield2",
+			"introtextfield3",
+			"blackfade",
+			"NoPause",
+			"BossFinal2",
+			"FinalBossArea",
+			"TextVersion",
+			"Effector",
+			"Death2MovingLavaDiamond",
+			"BossSmall2",
+			"CheckpointActivatorTrigger",
+			"frame",
+			"MINIMAP",
+			"biggerminimap",
+			"MusicTrigger",
+			"anypixelanim",
+			"Sprite",
+			"Sprite2",
+			"MinimapEnabler",
+			"MinimapDot",
+			"MinimapDot2",
+			"Sprite6",
+			"Sprite7",
+			"MinimapDot3",
+			"Greenworks",
+			"achievmentTrigger",
+			"Mouse"
+		],
+		"subfolders": [
+			{
+				"items": [
+					"crono",
+					"skully",
+					"skully2",
+					"CollectibleIcon",
+					"Necrotitle",
+					"loadicon",
+					"newicon",
+					"buttonmapicon",
+					"bigarrow",
+					"prop_text_heaven",
+					"prop_text_afterlife",
+					"prop_count1",
+					"prop_text_block",
+					"prop_text_tower",
+					"prop_text_chasm",
+					"prop_chain_big",
+					"prop_text_limbo",
+					"prop_flooded",
+					"prop_line1",
+					"BGDogTooth",
+					"BGSomething",
+					"BGSomething2",
+					"BGSomething3",
+					"smallarrow",
+					"PauseQuit",
+					"PauseResume",
+					"PauseTitle",
+					"Confirm",
+					"ConfirmYes",
+					"ConfirmNo",
+					"prop_text_heaven2",
+					"FakeWall",
+					"prop_giveup",
+					"prop_uarrow",
+					"skully3",
+					"prop_web",
+					"prop_spinner",
+					"prop_bunting",
+					"prop_spinner_small",
+					"prop_fakewall",
+					"prop_text_goback",
+					"prop_text_welcome",
+					"prop_yourehere",
+					"SplashBG",
+					"SplashBGFlash"
+				],
+				"subfolders": [],
+				"name": "Art"
+			},
+			{
+				"items": [
+					"DevNotes"
+				],
+				"subfolders": [],
+				"name": "_DevNotes"
+			},
+			{
+				"items": [
+					"CreditsText",
+					"creditscamera",
+					"CreditsRollStopper",
+					"WhiteScreen",
+					"BlackCurtain"
+				],
+				"subfolders": [],
+				"name": "credits"
+			}
+		]
+	},
+	"autosaveData": null,
+	"containers": [],
+	"families": {
+		"items": [
+			"Destroyables",
+			"bossFamily"
+		],
+		"subfolders": []
+	},
+	"layouts": {
+		"items": [
+			"Layout 1",
+			"endOld",
+			"Loader",
+			"intro",
+			"ending",
+			"credits",
+			"Splash",
+			"warning"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Event sheet 1",
+			"ending",
+			"intro",
+			"credits",
+			"speedrunTools",
+			"Splash",
+			"warning",
+			"gamepadSetter"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "item_pickup_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 383643797402171,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotbasic_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 211665579639249,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotbasic_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 402626686224546,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotbasic_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 569885695881632,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotbasic_04.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 368580195168253,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotgun_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 150058317069530,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotgun_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 660810259152605,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotgun_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 192427552952898,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "shotgun_04.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 795878486949674,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bouncepad_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 430244740105613,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bouncepad_02.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 128081645938306,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bouncepad_03.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 439269564536225,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bouncepad_04.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 249723152636569,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "death_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 962411356378668,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "explode_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 767904778568566,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "gem_pickup_01.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 678358200213518,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "click.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 910238922210876,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 284830302418248,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "pickupCoin.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 796980652757341,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "door_close.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 941980544693228,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "door_open.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 240426559857090,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "splash-plim.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 584075940335238,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "splash-start.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 573827139245135,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_jump_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 307775938321595,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_jump_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 834727381738888,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_jump_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 983677776330294,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_jump_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 368281019812310,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "attractor_travel_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 416988096999580,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "attractor_travel_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 276256611283878,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "attractor_travel_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 161155819278682,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "attractor_travel_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 858194056359977,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_death.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 926648020335934,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_chase_loop_1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 318589787166824,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_chase_loop_2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 245494219451158,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_chase_loop_3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 423629048985937,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_chase_loop_4.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 417993948053922,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_chase_loop_5.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 978400496695273,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "zombie_down_loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 527103745361017,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "elevator_loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 259598209096924,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "block_break_gold_fix2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 718661704130015,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "block_break_static_fix.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 688178076028647,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "bullet_impact_null.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 345680919542447,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": [
+				{
+					"items": [
+						{
+							"name": "attractor hit.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 748050826762900,
+							"file-info": {
+								"purpose": "none"
+							}
+						},
+						{
+							"name": "elevator_start.webm",
+							"type": "audio/webm; codecs=opus",
+							"sid": 424555289578434,
+							"file-info": {
+								"purpose": "none"
+							}
+						}
+					],
+					"subfolders": [],
+					"name": "not added in"
+				}
+			]
+		},
+		"music": {
+			"items": [
+				{
+					"name": "Blue_Intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 214905569132471,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Blue_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 422565645237826,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Green_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 382183383941716,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Escape_Sequence.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 793478639066321,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Red_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 170877658658916,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Fire_Tower.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 209104034303382,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Generic_Boss.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 270586434149448,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Final_Boss.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 932863449678805,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Menu_intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 875439444906381,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Menu_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 459157701476064,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Opener_audio.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 538205934510876,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "badending_audio.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 485770216871070,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "goodending_audio.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 380183064439225,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Interstitial_Room.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 938354080288934,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Maroon_Intro.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 695840882549973,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Maroon_Loop.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 197680132528237,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"video": {
+			"items": [],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 231219885105763,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 763402935500079,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 798894216116608,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 249483265926187,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 503572831426955,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 699026351904768,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 612565469552858,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"flowcharts": {
+		"items": [],
+		"subfolders": []
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "Marco Guaspari Worms",
+		"authorEmail": "marcogworms@gmail.com",
+		"authorWebsite": "http://worms.io",
+		"appId": "io.worms",
+		"pixelRounding": true,
+		"zAxisScale": "normalized",
+		"fov": 0.7853981633974483,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-integer-scale",
+		"fullscreenQuality": "low",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"orientations": "landscape",
+		"webgpu": "no",
+		"gpuPreference": "high-performance",
+		"scriptsType": "module",
+		"framerateMode": "vsync",
+		"sampling": "nearest",
+		"downscaling": "medium",
+		"renderingMode": "auto",
+		"anisotropicFiltering": "auto",
+		"zNear": 1,
+		"zFar": 10000,
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "none",
+		"preloadSounds": true,
+		"cordovaiOSScheme": "app",
+		"cordovaAndroidScheme": "file",
+		"exportFileStructure": "flat",
+		"uidAllocationMode": "increment"
+	},
+	"viewportWidth": 64,
+	"viewportHeight": 64,
+	"firstLayout": "warning"
+}

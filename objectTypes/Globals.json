@@ -1,0 +1,81 @@
+{
+	"name": "Globals",
+	"plugin-id": "Sprite",
+	"sid": 788160456192005,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "deaths",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 453590453636936
+		},
+		{
+			"name": "time",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 566564069043181
+		},
+		{
+			"name": "finalCountdownStarted",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 335880295440120
+		},
+		{
+			"name": "FinalCountdownTimer",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 284236715867186
+		},
+		{
+			"name": "diedInFinalRoom",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 635607456267963
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 109667055128871
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7148276,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 989370016666397,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

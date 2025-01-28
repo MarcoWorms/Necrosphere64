@@ -1,0 +1,51 @@
+{
+	"name": "prop_flooded",
+	"plugin-id": "Sprite",
+	"sid": 937274563642581,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 19,
+						"height": 16,
+						"originX": 0.5263157894736842,
+						"originY": 0.6250000000000001,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6657358,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.25,
+								0.8421052631578947,
+								0.25,
+								0.8421052631578947,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 546743907490622,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

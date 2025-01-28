@@ -1,0 +1,208 @@
+{
+	"name": "Zombie",
+	"plugin-id": "Sprite",
+	"sid": 165031117511732,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "STARTX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 800527089087596
+		},
+		{
+			"name": "STARTY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 202201864515774
+		},
+		{
+			"name": "activationDistance",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 765668681315743
+		},
+		{
+			"name": "jumpActivationRange",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 710612209468409
+		},
+		{
+			"name": "deactivationRange",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 377867394615737
+		},
+		{
+			"name": "TackleJumpStrength",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 609924225306687
+		},
+		{
+			"name": "openDoor",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 138907786002554
+		},
+		{
+			"name": "STUNNED",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 453837246908443
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 524835512394024
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 186029098781244
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 2,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 577902,
+						"collisionPoly": {
+							"points": [
+								0.2421875,
+								0,
+								0.24,
+								1,
+								0.7421875,
+								1,
+								0.7421875,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 733743019392039,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 4,
+						"height": 4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6390458,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.75,
+								0.25,
+								0.75,
+								0.75,
+								0.25,
+								0.75
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 4,
+						"height": 4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3184620,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.75,
+								0.25,
+								0.75,
+								0.75,
+								0.25,
+								0.75
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 4,
+						"height": 4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5972845,
+						"collisionPoly": {
+							"points": [
+								0.25,
+								0.25,
+								0.75,
+								0.25,
+								0.75,
+								0.75,
+								0.25,
+								0.75
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 140089825980037,
+				"name": "death",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 8
+			}
+		],
+		"subfolders": []
+	}
+}

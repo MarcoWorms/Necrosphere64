@@ -1,0 +1,142 @@
+{
+	"name": "warning",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "gamepadSetter"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 448603519085748
+				}
+			],
+			"actions": [
+				{
+					"id": "set-character-width",
+					"objectClass": "SpriteFontCollectibles",
+					"sid": 859775612786345,
+					"parameters": {
+						"character": "\"abcdefghjklmnopqrstuvwxyz1234567890?-_~#°%+*\\/=<>\"",
+						"width": "4"
+					}
+				},
+				{
+					"id": "set-character-width",
+					"objectClass": "SpriteFontCollectibles",
+					"sid": 552592047890689,
+					"parameters": {
+						"character": "\",;()[] \"",
+						"width": "3"
+					}
+				},
+				{
+					"id": "set-character-width",
+					"objectClass": "SpriteFontCollectibles",
+					"sid": 832835770553424,
+					"parameters": {
+						"character": "\"|i.:!'\"",
+						"width": "2"
+					}
+				}
+			],
+			"sid": 608719128544571
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "Sprite2",
+					"sid": 632126771342715,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 311373212775575,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Sprite7",
+					"sid": 992795834724868,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 386980961330941
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "Sprite7",
+					"sid": 696414348305089,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 213675587239586,
+					"parameters": {
+						"layout": "Splash"
+					}
+				}
+			],
+			"sid": 652658246405883
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 181997993040992,
+					"parameters": {
+						"key": 27
+					}
+				},
+				{
+					"id": "is-button-down",
+					"objectClass": "Gamepad",
+					"sid": 203014942487754,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "has-nth-touch",
+					"objectClass": "Touch",
+					"sid": 899158101638932,
+					"parameters": {
+						"touch-number": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 216145949594371,
+					"parameters": {
+						"layout": "Splash"
+					}
+				}
+			],
+			"sid": 701493758353693,
+			"isOrBlock": true
+		}
+	],
+	"sid": 212455719491539
+}

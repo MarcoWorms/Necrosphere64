@@ -1,0 +1,65 @@
+{
+	"name": "Jump",
+	"plugin-id": "Sprite",
+	"sid": 185288509007063,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "snapX",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 389768971284345
+		},
+		{
+			"name": "Tag",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 924935799640704
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 603059339315101
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 407762825781548
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 1,
+						"originX": 0.5,
+						"originY": 1,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5341415,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 444382555648957,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

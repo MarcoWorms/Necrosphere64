@@ -1,0 +1,90 @@
+{
+	"name": "Death",
+	"plugin-id": "Sprite",
+	"sid": 474266556856485,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "deleteOnBossDeath",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 866846525769693
+		},
+		{
+			"name": "invisibleOnBossDeath",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 132931908590577
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 179699025910874
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 198022669168439
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4345580,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 613402018147298,
+				"name": "indestructible",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6998307,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 446236306746114,
+				"name": "destructible",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

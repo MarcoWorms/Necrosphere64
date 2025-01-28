@@ -1,0 +1,21 @@
+{
+	"name": "Destroyables",
+	"plugin-id": "Sprite",
+	"sid": 150686618062564,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"TextTrigger",
+		"DevPoint",
+		"TextTriggerToll",
+		"bigarrow",
+		"Wall",
+		"Door",
+		"Jump",
+		"Death",
+		"smallarrow",
+		"Death3LerpBall",
+		"WallDestructible"
+	]
+}

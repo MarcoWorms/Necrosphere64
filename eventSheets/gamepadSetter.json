@@ -1,0 +1,237 @@
+{
+	"name": "gamepadSetter",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 116340251884689,
+					"parameters": {
+						"gamepad": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 970144012484413,
+					"parameters": {
+						"variable": "activeGamepadId",
+						"value": "Gamepad.GamepadIndex"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "buttonmapicon",
+					"sid": 829179332158306,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 937879161522633
+		},
+		{
+			"eventType": "variable",
+			"name": "deadzone",
+			"type": "number",
+			"initialValue": "50",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 631798102124056
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 968675979154570,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "left-analog-x-axis",
+						"comparison": 4,
+						"value": "deadzone"
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 913792632980517,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "left-analog-y-axis",
+						"comparison": 2,
+						"value": "-deadzone"
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 383996787913589,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "left-analog-y-axis",
+						"comparison": 4,
+						"value": "deadzone"
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 150515969778162,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "right-analog-x-axis",
+						"comparison": 2,
+						"value": "-deadzone"
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 949322261094071,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "right-analog-x-axis",
+						"comparison": 4,
+						"value": "deadzone"
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 113982452814004,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "right-analog-y-axis",
+						"comparison": 2,
+						"value": "-deadzone"
+					}
+				},
+				{
+					"id": "compare-axis",
+					"objectClass": "Gamepad",
+					"sid": 218571225394041,
+					"parameters": {
+						"gamepad": "-1",
+						"axis": "right-analog-y-axis",
+						"comparison": 4,
+						"value": "deadzone"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 892670269990395,
+					"parameters": {
+						"variable": "activeGamepadId",
+						"value": "Gamepad.GamepadIndex"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "buttonmapicon",
+					"sid": 914450535754958,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 221840321364000,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-gamepad-disconnected",
+					"objectClass": "Gamepad",
+					"sid": 204282911267741
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 296665504102783,
+					"parameters": {
+						"variable": "PAUSED"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "pause",
+					"sid": 773152374949681
+				}
+			],
+			"sid": 530571254870610
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlay-enabled",
+					"objectClass": "Greenworks",
+					"sid": 514061989397782
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 374686029165012,
+					"parameters": {
+						"variable": "PAUSED"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "pause",
+					"sid": 723533270110505
+				}
+			],
+			"sid": 430655940782818
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-gamepad-connected",
+					"objectClass": "Gamepad",
+					"sid": 817365806520641
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 134446402994228,
+					"parameters": {
+						"variable": "activeGamepadId",
+						"value": "Gamepad.GamepadIndex"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "buttonmapicon",
+					"sid": 252810080161895,
+					"parameters": {
+						"animation": "\"Animation 3\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 193025694786393
+		}
+	],
+	"sid": 764898583824687
+}

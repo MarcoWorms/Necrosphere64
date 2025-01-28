@@ -1,0 +1,22 @@
+{
+	"name": "BGSomething2",
+	"plugin-id": "TiledBg",
+	"sid": 532423891052730,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 8,
+		"height": 8,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6744403,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

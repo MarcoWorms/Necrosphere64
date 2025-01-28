@@ -1,0 +1,88 @@
+{
+	"name": "Confirm",
+	"plugin-id": "Sprite",
+	"sid": 388991664097269,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 49,
+						"height": 17,
+						"originX": 0.24489795918367346,
+						"originY": 0.35294117647058826,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9481995,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5306122448979592,
+								0,
+								0.5306122448979592,
+								0,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 981312129449999,
+				"name": "LoseProgress",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 33,
+						"height": 17,
+						"originX": 0.30303030303030304,
+						"originY": -1.0588235294117647,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4400252,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.7272727272727273,
+								0,
+								0.7272727272727273,
+								0,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 573897146301880,
+				"name": "ResetSave",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

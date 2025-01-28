@@ -1,0 +1,285 @@
+{
+	"name": "speedrunTools",
+	"events": [
+		{
+			"functionName": "start recording",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "start-recording",
+					"objectClass": "VideoRecorder",
+					"sid": 962240621934701,
+					"parameters": {
+						"video-format": "auto",
+						"framerate": "0",
+						"audio-format": "auto",
+						"quality-kbps": "2500"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PauseTitle",
+					"sid": 881498150005068,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Necrotitle",
+					"sid": 720625286167294,
+					"parameters": {
+						"animation": "\"Animation 2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 822494665578633
+		},
+		{
+			"functionName": "stop recording",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "stop-recording",
+					"objectClass": "VideoRecorder",
+					"sid": 912463758696880
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "PauseTitle",
+					"sid": 181166332778742,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Necrotitle",
+					"sid": 246828349720207,
+					"parameters": {
+						"animation": "\"Animation 1\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 640136320080625
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-recording-ready",
+					"objectClass": "VideoRecorder",
+					"sid": 377709826572153
+				}
+			],
+			"actions": [
+				{
+					"id": "invoke-download",
+					"objectClass": "Browser",
+					"sid": 350949303498699,
+					"parameters": {
+						"url": "VideoRecorder.RecordingURL",
+						"filename": "\"Necrosphere64 Run\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 177190253967781,
+					"parameters": {
+						"variable": "recordingURL",
+						"value": "VideoRecorder.RecordingURL"
+					}
+				}
+			],
+			"sid": 305283189263385
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 831340284423180,
+					"parameters": {
+						"key": 73
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "start recording",
+					"sid": 175830602880736
+				}
+			],
+			"sid": 808673725475208
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 787591903349397,
+					"parameters": {
+						"key": 79
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "stop recording",
+					"sid": 559126011097352
+				}
+			],
+			"sid": 338851220308740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 657097608507417,
+					"parameters": {
+						"key": 75
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "snapshot-canvas",
+					"objectClass": "System",
+					"sid": 227003674745723,
+					"parameters": {
+						"format": "png",
+						"jpeg-quality": "100",
+						"x": "0",
+						"y": "0",
+						"width": "0",
+						"height": "0"
+					}
+				}
+			],
+			"sid": 474997050822902
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-canvas-snapshot",
+					"objectClass": "System",
+					"sid": 838531914036055
+				}
+			],
+			"actions": [
+				{
+					"id": "invoke-download",
+					"objectClass": "Browser",
+					"sid": 360661467814657,
+					"parameters": {
+						"url": "CanvasSnapshot",
+						"filename": "\"Necro64\""
+					}
+				}
+			],
+			"sid": 490832677404541
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 455084662324246,
+					"parameters": {
+						"key": 76
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "invoke-download",
+					"objectClass": "Browser",
+					"sid": 797832821314130,
+					"parameters": {
+						"url": "recordingURL",
+						"filename": "\"Necrosphere64 Run\""
+					}
+				}
+			],
+			"sid": 866811867285567
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 936272671285691,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "back-view"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 176126032504649,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-recording",
+							"objectClass": "VideoRecorder",
+							"sid": 128934413368890
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "stop recording",
+							"sid": 369211787149211
+						}
+					],
+					"sid": 745635093380786
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 690270291766024
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "start recording",
+							"sid": 325489327290588
+						}
+					],
+					"sid": 941548345938451
+				}
+			]
+		}
+	],
+	"sid": 261280805837801
+}

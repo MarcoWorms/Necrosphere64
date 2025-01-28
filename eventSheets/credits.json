@@ -1,0 +1,873 @@
+{
+	"name": "credits",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "canFinish",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 141497410760711
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "speedrunTools"
+		},
+		{
+			"eventType": "comment",
+			"text": "Current Gamepad Detector",
+			"background-color": [
+				0.3058823529411765,
+				0.06274509803921569,
+				0.41568627450980394,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 370427201642273,
+					"parameters": {
+						"gamepad": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 714989809907541,
+					"parameters": {
+						"variable": "activeGamepadId",
+						"value": "Gamepad.GamepadIndex"
+					}
+				}
+			],
+			"sid": 402450938691780
+		},
+		{
+			"eventType": "comment",
+			"text": "Init camera and text",
+			"background-color": [
+				0.3058823529411765,
+				0.06274509803921569,
+				0.41568627450980394,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 726881992144088
+				}
+			],
+			"actions": [
+				{
+					"id": "set-character-width",
+					"objectClass": "CreditsText",
+					"sid": 863833130906042,
+					"parameters": {
+						"character": "\"abcdefghjklmnopqrstuvwxyz1234567890?-_~#°%+*\\/=<>\"",
+						"width": "4"
+					}
+				},
+				{
+					"id": "set-character-width",
+					"objectClass": "CreditsText",
+					"sid": 907032181657992,
+					"parameters": {
+						"character": "\",;()[] \"",
+						"width": "3"
+					}
+				},
+				{
+					"id": "set-character-width",
+					"objectClass": "CreditsText",
+					"sid": 710198388051743,
+					"parameters": {
+						"character": "\"|i.:!'\"",
+						"width": "2"
+					}
+				},
+				{
+					"id": "set-angle-of-motion",
+					"objectClass": "creditscamera",
+					"sid": 782994307699579,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"angle": "90"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "WhiteScreen",
+					"sid": 171409099743972,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 183180823301510,
+					"parameters": {
+						"variable": "canFinish",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BlackCurtain",
+					"sid": 733260408417502,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "BlackCurtain",
+					"sid": 241593125841511
+				}
+			],
+			"sid": 647554873842459,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CreditsText",
+							"sid": 206070595290306,
+							"parameters": {
+								"instance-variable": "Type",
+								"comparison": 0,
+								"value": "\"clock\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "CreditsText",
+							"sid": 977655432199702,
+							"parameters": {
+								"text": "zeropad(floor((ceil((FinalTime)*10)/10) / 60), 2) & \":\" & zeropad(floor((ceil((FinalTime)*10)/10) % 60), 2) & \":\" & zeropad(floor((FinalTime) / 3600), 2) & \".\" & zeropad(floor(((FinalTime) - floor(FinalTime)) * 1000), 3)\r\n\r\n"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "CreditsText",
+							"sid": 478525784658031,
+							"parameters": {
+								"text": "zeropad(floor((ceil((FinalTime)*10)/10) / 3600), 2) & \":\" & zeropad(floor(((ceil((FinalTime)*10)/10) % 3600) / 60), 2) & \"'\" & zeropad(floor(((ceil((FinalTime)*10)/10) % 3600) % 60), 2) & \".\" & zeropad(floor(((FinalTime) - floor(FinalTime)) * 1000), 3)"
+							}
+						}
+					],
+					"sid": 937753668903028
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CreditsText",
+							"sid": 564378928197579,
+							"parameters": {
+								"instance-variable": "Type",
+								"comparison": 0,
+								"value": "\"deaths\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "CreditsText",
+							"sid": 541021549418325,
+							"parameters": {
+								"text": "zeropad(FinalDeaths, 4)"
+							}
+						}
+					],
+					"sid": 406313716138242
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "CreditsText",
+							"sid": 496401008949734,
+							"parameters": {
+								"instance-variable": "Type",
+								"comparison": 0,
+								"value": "\"collectibles\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "CreditsText",
+							"sid": 596772410548285,
+							"parameters": {
+								"text": "zeropad(FinalCollectibles, 2)&\"/16\"\n"
+							}
+						}
+					],
+					"sid": 351164074801674
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-recording",
+							"objectClass": "VideoRecorder",
+							"sid": 473486925595760
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Necrotitle",
+							"sid": 533689520593285,
+							"parameters": {
+								"animation": "\"Animation 2\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 268041873749281
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "Stop camera roll at the end of page",
+			"background-color": [
+				0.3058823529411765,
+				0.06274509803921569,
+				0.41568627450980394,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-recording-ready",
+					"objectClass": "VideoRecorder",
+					"sid": 337655705916854
+				}
+			],
+			"actions": [
+				{
+					"id": "invoke-download",
+					"objectClass": "Browser",
+					"sid": 776866504913955,
+					"parameters": {
+						"url": "VideoRecorder.RecordingURL",
+						"filename": "\"Necrosphere64 Run\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 885828916908092,
+					"parameters": {
+						"variable": "recordingURL",
+						"value": "VideoRecorder.RecordingURL"
+					}
+				}
+			],
+			"sid": 506954951159451
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "creditscamera",
+					"sid": 273068283950671,
+					"parameters": {
+						"object": "CreditsRollStopper"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "creditscamera",
+					"sid": 458736707821774,
+					"behaviorType": "Bullet",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "creditscamera",
+					"sid": 620476509550293,
+					"parameters": {
+						"instance-variable": "ROLLENDED",
+						"value": "true"
+					}
+				},
+				{
+					"id": "stop-recording",
+					"objectClass": "VideoRecorder",
+					"sid": 571073057985043
+				}
+			],
+			"sid": 586671936049672,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-x",
+							"objectClass": "crono",
+							"sid": 549245598711256,
+							"parameters": {
+								"x": "round(crono.X)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "crono",
+							"sid": 101297524227702,
+							"parameters": {
+								"y": "round(crono.Y)"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "skully2",
+							"sid": 513797368806828,
+							"parameters": {
+								"x": "round(skully2.X)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "skully2",
+							"sid": 358787038104753,
+							"parameters": {
+								"y": "round(skully2.Y)"
+							}
+						},
+						{
+							"id": "set-x",
+							"objectClass": "CollectibleIcon",
+							"sid": 953213772602977,
+							"parameters": {
+								"x": "round(CollectibleIcon.X)"
+							}
+						},
+						{
+							"id": "set-y",
+							"objectClass": "CollectibleIcon",
+							"sid": 828455132683215,
+							"parameters": {
+								"y": "round(CollectibleIcon.Y)"
+							}
+						}
+					],
+					"sid": 440005283831130,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 688555217585142,
+									"parameters": {
+										"object": "CreditsText"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-x",
+									"objectClass": "CreditsText",
+									"sid": 327085044816263,
+									"parameters": {
+										"x": "round(CreditsText.X)"
+									}
+								},
+								{
+									"id": "set-y",
+									"objectClass": "CreditsText",
+									"sid": 452118358875892,
+									"parameters": {
+										"y": "round(CreditsText.Y)"
+									}
+								}
+							],
+							"sid": 138055493520738
+						}
+					]
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "Fast forward",
+			"background-color": [
+				0.3058823529411765,
+				0.06274509803921569,
+				0.41568627450980394,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 110557391773832,
+					"parameters": {
+						"key": 27
+					}
+				},
+				{
+					"id": "has-nth-touch",
+					"objectClass": "Touch",
+					"sid": 772142499589239,
+					"parameters": {
+						"touch-number": "1"
+					}
+				},
+				{
+					"id": "is-button-down",
+					"objectClass": "Gamepad",
+					"sid": 425757895625919,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "start-menu"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 653543710556086,
+			"disabled": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 832337391736004
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "creditscamera",
+							"sid": 545336749181476,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "80"
+							}
+						}
+					],
+					"sid": 644019243773115,
+					"disabled": true
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 645158542869488
+				}
+			],
+			"actions": [],
+			"sid": 443613759926265,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 759817621851958
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "creditscamera",
+							"sid": 314223978529837,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "10"
+							}
+						}
+					],
+					"sid": 754797481101551
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "Back to main menu upon roll end",
+			"background-color": [
+				0.3058823529411765,
+				0.06274509803921569,
+				0.41568627450980394,
+				1
+			]
+		},
+		{
+			"functionName": "end",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 878552470280270,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "creditscamera",
+							"sid": 249321490503359,
+							"parameters": {
+								"instance-variable": "ROLLENDED"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 526354733171958,
+							"parameters": {
+								"variable": "canFinish"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 478135224649528,
+							"parameters": {
+								"variable": "canFinish",
+								"value": "false"
+							}
+						},
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "BlackCurtain",
+							"sid": 814830678908656,
+							"parameters": {
+								"instance-variable": "Fadout",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WhiteScreen",
+							"sid": 731045331138348,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 668640860174703,
+							"parameters": {
+								"seconds": "0.05"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WhiteScreen",
+							"sid": 128416496557550,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 897016446899396,
+							"parameters": {
+								"seconds": "3.0"
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 579698138905429,
+							"parameters": {
+								"layout": "Layout 1"
+							}
+						}
+					],
+					"sid": 299789895881033
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 255459911183293
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 786174667403055,
+					"parameters": {
+						"key": 27
+					}
+				},
+				{
+					"id": "has-nth-touch",
+					"objectClass": "Touch",
+					"sid": 599563163624582,
+					"parameters": {
+						"touch-number": "1"
+					}
+				},
+				{
+					"id": "is-button-down",
+					"objectClass": "Gamepad",
+					"sid": 123369728882758,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "start-menu"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 853201587213729,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 201976453117780
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "end",
+							"sid": 353106065614190
+						}
+					],
+					"sid": 757736656466347
+				}
+			],
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 502084641422121,
+					"parameters": {
+						"key": 37
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 314692310162189,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [],
+			"sid": 990320849559682,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 233246064470311
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "end",
+							"sid": 494310085218670
+						}
+					],
+					"sid": 994434015532313
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 126545001500712,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 529159459279232,
+					"parameters": {
+						"key": 68
+					}
+				}
+			],
+			"actions": [],
+			"sid": 155143371282160,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 608467401168298
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "end",
+							"sid": 429337018928924
+						}
+					],
+					"sid": 784534740489429
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 251198573905818,
+					"parameters": {
+						"key": 65
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 391728975336465,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [],
+			"sid": 606212645216422,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 595697324426081
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "end",
+							"sid": 171848134942467
+						}
+					],
+					"sid": 396373343694744
+				}
+			]
+		},
+		{
+			"eventType": "comment",
+			"text": "Fadeout after final ESC",
+			"background-color": [
+				0.3058823529411765,
+				0.06274509803921569,
+				0.41568627450980394,
+				1
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "BlackCurtain",
+					"sid": 907692033277735,
+					"parameters": {
+						"instance-variable": "Fadout"
+					}
+				},
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 895481108039500,
+					"parameters": {
+						"interval-seconds": "0.01"
+					}
+				},
+				{
+					"id": "compare-opacity",
+					"objectClass": "BlackCurtain",
+					"sid": 738741434093231,
+					"parameters": {
+						"comparison": 2,
+						"opacity": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BlackCurtain",
+					"sid": 221078865123871,
+					"parameters": {
+						"opacity": "BlackCurtain.Opacity + 1"
+					}
+				}
+			],
+			"sid": 160407126720060
+		}
+	],
+	"sid": 958204784378959
+}

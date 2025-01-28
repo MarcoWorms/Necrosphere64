@@ -1,0 +1,215 @@
+{
+	"name": "Splash",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "gamepadSetter"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 682955707151080
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "anypixelanim",
+					"sid": 949573278160634
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 905829651199672,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "anypixelanim",
+					"sid": 236874849177003,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "SplashBG",
+					"sid": 865696254399316,
+					"parameters": {
+						"color": "rgbEx(100, 0, 100)"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "SplashBG",
+					"sid": 111678820290011,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetColor",
+						"end-value": "rgbEx(100, 33, 33)",
+						"time": "0.6",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 991322733162390,
+					"parameters": {
+						"seconds": "0.75"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "SplashBGFlash",
+					"sid": 575597266001927,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetX",
+						"end-value": "80",
+						"time": "0.5",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 912981042201740
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-frame-changed",
+					"objectClass": "anypixelanim",
+					"sid": 169309513692340
+				}
+			],
+			"actions": [],
+			"sid": 236119102649454,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-animation-frame",
+							"objectClass": "anypixelanim",
+							"sid": 271504047578996,
+							"parameters": {
+								"comparison": 0,
+								"number": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 268107146741090,
+							"parameters": {
+								"audio-file": "splash-start",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"splash_start\""
+							}
+						}
+					],
+					"sid": 699022565257056,
+					"disabled": true
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "anypixelanim",
+					"sid": 557673523841952
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 992997326839329,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 261202721207051,
+					"parameters": {
+						"tag": "\"splash_start\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 287212389668988,
+					"parameters": {
+						"audio-file": "splash-plim",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 900797053236534,
+					"parameters": {
+						"seconds": "1.5"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Sprite2",
+					"sid": 323464651341126,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 604362529703522
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "Sprite2",
+					"sid": 818707866362834,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 773399809935023,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 975567159471555
+		}
+	],
+	"sid": 898167059698437
+}

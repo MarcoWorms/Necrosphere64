@@ -1,0 +1,63 @@
+{
+	"name": "WallThru",
+	"plugin-id": "Sprite",
+	"sid": 208170925773290,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "deleteOnBossDeath",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 722469228776497
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "jumpthru",
+			"name": "Jumpthru",
+			"sid": 733751418598072
+		},
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 980291967789365
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "noise",
+			"name": "Noise"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1,
+						"height": 1,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3007172,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 575440187804814,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

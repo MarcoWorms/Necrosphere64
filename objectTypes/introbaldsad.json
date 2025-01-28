@@ -1,0 +1,51 @@
+{
+	"name": "introbaldsad",
+	"plugin-id": "Sprite",
+	"sid": 502380595537438,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.515625,
+						"originY": 0.5,
+						"originalSource": "C:\\Users\\caiol\\Desktop\\necro64 stuff\\baldsad.png",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8881098,
+						"collisionPoly": {
+							"points": [
+								0.140625,
+								0.109375,
+								0.875,
+								0.109375,
+								0.875,
+								0.890625,
+								0.140625,
+								0.890625
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 619493070474638,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

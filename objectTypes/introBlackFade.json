@@ -1,0 +1,30 @@
+{
+	"name": "introBlackFade",
+	"plugin-id": "TiledBg",
+	"sid": 221997811702289,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "FADEIN",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 677851509156044
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 4,
+		"height": 4,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 1672119,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

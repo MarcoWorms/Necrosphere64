@@ -1,0 +1,293 @@
+{
+	"name": "bossFamily",
+	"plugin-id": "Sprite",
+	"sid": 342010073770538,
+	"instanceVariables": [
+		{
+			"name": "enabledBySaveUid",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 761983358300539
+		},
+		{
+			"name": "enabled",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 964326134646851
+		},
+		{
+			"name": "hp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 327470104299367
+		},
+		{
+			"name": "STARTX",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 545852934641128
+		},
+		{
+			"name": "STARTY",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 325921574086940
+		},
+		{
+			"name": "initialAngle",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 962620811624737
+		},
+		{
+			"name": "idleSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 248340846589670
+		},
+		{
+			"name": "attackSpeed",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 224416266213566
+		},
+		{
+			"name": "attackDuration",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 351887020976087
+		},
+		{
+			"name": "attackInterval",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 934512538543896
+		},
+		{
+			"name": "INITIAL_HP",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 921898475913426
+		},
+		{
+			"name": "OpenDoorUidOnDeath",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 264345856643718
+		},
+		{
+			"name": "reverseOpenDoorDirection",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 327557260515884
+		},
+		{
+			"name": "delaytoMoveAfterShoot",
+			"type": "number",
+			"desc": "starts counting from first shot",
+			"show": true,
+			"sid": 969488793380545
+		},
+		{
+			"name": "shootAmount",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 751800216137407
+		},
+		{
+			"name": "horizontalDoorOpen",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 225546660884558
+		},
+		{
+			"name": "VELOCITY_X",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 677449989755310
+		},
+		{
+			"name": "VELOCITY_Y",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 618196385157893
+		},
+		{
+			"name": "SPEED",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 660393276412234
+		},
+		{
+			"name": "MOVING",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 362242195221530
+		},
+		{
+			"name": "damageTakenFromZombie",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 235929106664334
+		},
+		{
+			"name": "imuneAgainstPlayerBullets",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 829033851420164
+		},
+		{
+			"name": "zipLeftWhenDead",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 486404685576689
+		},
+		{
+			"name": "zipDownWhenDead",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 787925999868871
+		},
+		{
+			"name": "attackShootToggle",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 291146178042992
+		},
+		{
+			"name": "disableAttack",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 183918167147684
+		},
+		{
+			"name": "shootRepeat",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 548758878058849
+		},
+		{
+			"name": "shootRepeatInterval",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 773903042772028
+		},
+		{
+			"name": "shootRepeatRotation",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 298673961904654
+		},
+		{
+			"name": "StartAngleFixed",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 205665422741471
+		},
+		{
+			"name": "fixedStartAngle",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 192103935179867
+		},
+		{
+			"name": "fastIntro",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 282314052276160
+		},
+		{
+			"name": "deleteMusicTriggerOnDeath",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 440857350238585
+		},
+		{
+			"name": "triggerIntroOnDeath",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 323719351659756
+		},
+		{
+			"name": "triggerLoopOnDeath",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 430228904904350
+		},
+		{
+			"name": "achievmentName",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 436172397645499
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 310256097703213
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 394018741695016
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 355368478479050
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 947001923947548
+		},
+		{
+			"behaviorId": "MoveTo",
+			"name": "MoveTo",
+			"sid": 343441515722342
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"BossBig",
+		"BossSmall",
+		"BossFinal2",
+		"BossSmall2"
+	]
+}

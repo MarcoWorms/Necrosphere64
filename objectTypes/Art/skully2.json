@@ -1,0 +1,51 @@
+{
+	"name": "skully2",
+	"plugin-id": "Sprite",
+	"sid": 296028888240940,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 9,
+						"height": 9,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5385962,
+						"collisionPoly": {
+							"points": [
+								0.8888888888888888,
+								0.7222222222222222,
+								0.11111111111111116,
+								0.7222222222222222,
+								0.11111111111111116,
+								0.16666666666666666,
+								0.8888888888888888,
+								0.16666666666666666
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 707444937464454,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

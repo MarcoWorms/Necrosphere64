@@ -1,0 +1,77 @@
+{
+	"name": "MinimapDot3",
+	"plugin-id": "Sprite",
+	"sid": 998261019225127,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 3,
+						"height": 3,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2425194,
+						"collisionPoly": {
+							"points": [
+								0.16666666666666666,
+								0.16666666666666666,
+								0.8333333333333334,
+								0.16666666666666666,
+								0.8333333333333334,
+								0.8333333333333334,
+								0.16666666666666666,
+								0.8333333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 3,
+						"height": 3,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8409175,
+						"collisionPoly": {
+							"points": [
+								0.16666666666666666,
+								0.16666666666666666,
+								0.8333333333333334,
+								0.16666666666666666,
+								0.8333333333333334,
+								0.8333333333333334,
+								0.16666666666666666,
+								0.8333333333333334
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 547437625120529,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

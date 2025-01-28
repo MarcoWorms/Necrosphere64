@@ -1,0 +1,1134 @@
+{
+	"name": "ending",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "speedrunTools"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "gamepadSetter"
+		},
+		{
+			"eventType": "variable",
+			"name": "FinalCollectibles",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 731787061873649
+		},
+		{
+			"eventType": "variable",
+			"name": "FinalTime",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 533221543383510
+		},
+		{
+			"eventType": "variable",
+			"name": "FinalDeaths",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 878011026250664
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 734591243780840
+				}
+			],
+			"actions": [],
+			"sid": 864852794270415,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "if all collectibles"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 452528679622433,
+							"parameters": {
+								"variable": "FinalCollectibles",
+								"comparison": 2,
+								"value": "16"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 700233080182433,
+							"parameters": {
+								"audio-file": "badending_audio",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "seek-to",
+							"objectClass": "Audio",
+							"sid": 167736374829556,
+							"parameters": {
+								"tag": "\"\"",
+								"position": "0.4"
+							}
+						},
+						{
+							"id": "seek-to",
+							"objectClass": "Audio",
+							"sid": 597136723912360,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"\"",
+								"position": "0.5"
+							}
+						}
+					],
+					"sid": 389426645876676
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 330991418112909
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 610583530650956,
+							"parameters": {
+								"audio-file": "goodending_audio",
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "seek-to",
+							"objectClass": "Audio",
+							"sid": 837917414965909,
+							"parameters": {
+								"tag": "\"\"",
+								"position": "0.4"
+							}
+						},
+						{
+							"id": "seek-to",
+							"objectClass": "Audio",
+							"sid": 900846274924894,
+							"disabled": true,
+							"parameters": {
+								"tag": "\"\"",
+								"position": "0.5"
+							}
+						}
+					],
+					"sid": 984081094298969
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-character-width",
+							"objectClass": "introtextfield3",
+							"sid": 780875687890668,
+							"parameters": {
+								"character": "\"abcdefghjklmnopqrstuvwxyz1234567890?-_~#°%+*\\/=<>\"",
+								"width": "4"
+							}
+						},
+						{
+							"id": "set-character-width",
+							"objectClass": "introtextfield3",
+							"sid": 422680408822880,
+							"parameters": {
+								"character": "\",;()[] \"",
+								"width": "3"
+							}
+						},
+						{
+							"id": "set-character-width",
+							"objectClass": "introtextfield3",
+							"sid": 516820465863434,
+							"parameters": {
+								"character": "\"|i.:!'\"",
+								"width": "2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 982536768143493,
+							"parameters": {
+								"name": "\"InitStory\"",
+								"parameter-n": [
+									"1"
+								]
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 522334957128835,
+							"parameters": {
+								"name": "\"SetupSlidesPlacement\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introfarsad",
+							"sid": 132988365718943
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 437669683631296,
+							"parameters": {
+								"name": "\"fadeIn\"",
+								"parameter-n": []
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 884661405196666,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introbaldsad",
+							"sid": 814756163174446
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 739410388531854,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 186820538473588,
+							"parameters": {
+								"name": "\"showText\"",
+								"parameter-n": [
+									"\"what have i done!\"",
+									"2",
+									"rgb(48,96,130)"
+								]
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 155098160858636,
+							"parameters": {
+								"seconds": "2.5"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 364889783268062,
+							"parameters": {
+								"name": "\"showText\"",
+								"parameter-n": [
+									"\"if i had ignored his orders, he'd still be here.\"",
+									"3",
+									"rgb(48,96,130)"
+								]
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 122067703010835,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introfarsad",
+							"sid": 139255292963264
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introdooropening",
+							"sid": 240481024355402
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "introdooropening",
+							"sid": 996336327072034,
+							"parameters": {
+								"animation": "\"Default\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 366701677091758,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introheroclose",
+							"sid": 425980359181781
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 331162761026634,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 284589756933106,
+							"parameters": {
+								"name": "\"showText\"",
+								"parameter-n": [
+									"\"i'm back!!\"",
+									"2",
+									"rgb(75,105,47)"
+								]
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 444585839957018,
+							"parameters": {
+								"seconds": "1"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introhug",
+							"sid": 604302944167547
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 536558110147732,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 594280299753186,
+							"parameters": {
+								"name": "\"showText\"",
+								"parameter-n": [
+									"\"and it only took me \" & zeropad(floor((ceil((FinalTime)*10)/10) / 60), 2) & \"'\" & zeropad(floor((ceil((FinalTime)*10)/10) % 60), 2) & \".\" & zeropad(floor(((FinalTime) - floor(FinalTime)) * 1000), 3) & \" to find the portal!\"",
+									"2",
+									"rgb(75,105,47)"
+								]
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 484807825738254,
+							"parameters": {
+								"seconds": "2.5"
+							}
+						},
+						{
+							"id": "call-function",
+							"objectClass": "Function",
+							"sid": 691472874409342,
+							"parameters": {
+								"name": "\"showText\"",
+								"parameter-n": [
+									"\"i also found \"& FinalCollectibles &\" of these!\"",
+									"2",
+									"rgb(75,105,47)"
+								]
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 731781794253896,
+							"parameters": {
+								"seconds": "2"
+							}
+						},
+						{
+							"id": "move-to-top",
+							"objectClass": "introhand",
+							"sid": 417740556764979
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 871347971431000,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						}
+					],
+					"sid": 808109041299854,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "if all collectibles"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 300338038169097,
+									"parameters": {
+										"variable": "FinalCollectibles",
+										"comparison": 2,
+										"value": "16"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 250939074597111,
+									"parameters": {
+										"name": "\"showText\"",
+										"parameter-n": [
+											"\"pretty sure there are more\"",
+											"2",
+											"rgb(75,105,47)"
+										]
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 202857801658509,
+									"parameters": {
+										"seconds": "2.5"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "IntroBackground",
+									"sid": 700318948513275
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 575596786553639,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 832906808307611,
+									"parameters": {
+										"name": "\"showText\"",
+										"parameter-n": [
+											"\"now let me explain how to find the portal...\"",
+											"3",
+											"rgb(75,105,47)"
+										]
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 474293796673090,
+									"parameters": {
+										"seconds": "3.5"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 891856135604788,
+									"parameters": {
+										"name": "\"showText\"",
+										"parameter-n": [
+											"\"...because you're going next, buddy.\"",
+											"3",
+											"rgb(75,105,47)"
+										]
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 119283863598471,
+									"parameters": {
+										"seconds": "3.5"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "introeyes",
+									"sid": 993903249529218
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 716068404299584,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "IntroBackground",
+									"sid": 640265176995330
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 800726193402797,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "activate-achievement",
+									"objectClass": "Greenworks",
+									"sid": 865475527203440,
+									"parameters": {
+										"achievement": "\"any\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 777336750161966,
+									"parameters": {
+										"layout": "credits"
+									}
+								}
+							],
+							"sid": 611299759231805
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 416186382524299
+								}
+							],
+							"actions": [
+								{
+									"id": "move-to-top",
+									"objectClass": "IntroBackground",
+									"sid": 480161263146329
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 229145151142635,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 964035471598228,
+									"parameters": {
+										"name": "\"showText\"",
+										"parameter-n": [
+											"\"let's get some coffee and decide what to do with my dead old body over there\"",
+											"4",
+											"rgb(75,105,47)"
+										]
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 531632619550184,
+									"parameters": {
+										"seconds": "4"
+									}
+								},
+								{
+									"id": "move-to-top",
+									"objectClass": "introleaving",
+									"sid": 119511445145472
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 644956668690722,
+									"parameters": {
+										"seconds": "2"
+									}
+								},
+								{
+									"id": "call-function",
+									"objectClass": "Function",
+									"sid": 493097965826734,
+									"parameters": {
+										"name": "\"fadeOut\"",
+										"parameter-n": [
+											"3"
+										]
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 100607393215336,
+									"parameters": {
+										"seconds": "1"
+									}
+								},
+								{
+									"id": "activate-achievement",
+									"objectClass": "Greenworks",
+									"sid": 389598827709890,
+									"parameters": {
+										"achievement": "\"any\""
+									}
+								},
+								{
+									"id": "activate-achievement",
+									"objectClass": "Greenworks",
+									"sid": 626585866913456,
+									"parameters": {
+										"achievement": "\"100\""
+									}
+								},
+								{
+									"id": "go-to-layout",
+									"objectClass": "System",
+									"sid": 243242821215266,
+									"parameters": {
+										"layout": "credits"
+									}
+								}
+							],
+							"sid": 876463322932088
+						}
+					]
+				}
+			]
+		},
+		{
+			"bookmark": true,
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 511761047405822,
+					"parameters": {
+						"name": "\"InitStory\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield",
+					"sid": 512629889561339,
+					"disabled": true,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield3",
+					"sid": 116721334344106,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "IntroBackground",
+					"sid": 436241857780292,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "IntroBackground",
+					"sid": 991996349636244,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 798394286938555,
+					"parameters": {
+						"seconds": "Function.Param(0)"
+					}
+				}
+			],
+			"sid": 160948165421114
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 785408646418331,
+					"parameters": {
+						"name": "\"SetupSlidesPlacement\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "introfarsad",
+					"sid": 757986665025621,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introbaldsad",
+					"sid": 157219189958619,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introdooropening",
+					"sid": 401724027123434,
+					"parameters": {
+						"x": "38",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introheroclose",
+					"sid": 875424706276968,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introhug",
+					"sid": 906911672632547,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introhand",
+					"sid": 787199882442087,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introleaving",
+					"sid": 663144691779469,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introeyes",
+					"sid": 522954498427159,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				}
+			],
+			"sid": 953805526177712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 105160437047329,
+					"parameters": {
+						"name": "\"showText\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "IntroBackground",
+					"sid": 201443533821293
+				},
+				{
+					"id": "set-font-color",
+					"objectClass": "introtextfield",
+					"sid": 552030294444687,
+					"disabled": true,
+					"parameters": {
+						"color": "Function.Param(2)"
+					}
+				},
+				{
+					"id": "set-default-color",
+					"objectClass": "introtextfield3",
+					"sid": 756698057086897,
+					"parameters": {
+						"color": "Function.Param(2)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introtextfield",
+					"sid": 408888649501563,
+					"disabled": true,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introtextfield3",
+					"sid": 560138267987217,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introtextfield",
+					"sid": 532124169730197,
+					"disabled": true
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introtextfield3",
+					"sid": 260848984713744
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield",
+					"sid": 941393707869698,
+					"disabled": true,
+					"parameters": {
+						"text": "Function.Param(0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield3",
+					"sid": 756525055788719,
+					"parameters": {
+						"text": "Function.Param(0)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 927678043284051,
+					"parameters": {
+						"seconds": "Function.Param(1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield",
+					"sid": 892994202045982,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 978910446397513
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 176888750486773,
+					"parameters": {
+						"name": "\"fadeIn\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "introBlackFade",
+					"sid": 956737648910694,
+					"parameters": {
+						"instance-variable": "FADEIN",
+						"value": "true"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introBlackFade",
+					"sid": 669279450988926
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introBlackFade",
+					"sid": 456267768181895,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "introBlackFade",
+					"sid": 143697338693510,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "introBlackFade",
+					"sid": 495352242299786,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 305695963356417
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 633310646507375,
+					"parameters": {
+						"name": "\"fadeOut\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "introBlackFade",
+					"sid": 522069542466554,
+					"parameters": {
+						"instance-variable": "FADEIN",
+						"value": "false"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introBlackFade",
+					"sid": 999435302097750
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introBlackFade",
+					"sid": 323549484804749,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "introBlackFade",
+					"sid": 189205308995087,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "introBlackFade",
+					"sid": 810582439742476,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 201774917140313
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 193037672769327,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 821078929317870,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-boolean-instance-variable-set",
+							"objectClass": "introBlackFade",
+							"sid": 263500280358091,
+							"parameters": {
+								"instance-variable": "FADEIN"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "introBlackFade",
+							"sid": 357516661449587,
+							"parameters": {
+								"opacity": "introBlackFade.Opacity - 4"
+							}
+						}
+					],
+					"sid": 351233429023913
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 254088975094187
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "introBlackFade",
+							"sid": 741374985053525,
+							"parameters": {
+								"opacity": "introBlackFade.Opacity + 4"
+							}
+						}
+					],
+					"sid": 988957010750990
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 653940936212872,
+					"parameters": {
+						"key": 27
+					}
+				},
+				{
+					"id": "is-button-down",
+					"objectClass": "Gamepad",
+					"sid": 320697063927710,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "has-nth-touch",
+					"objectClass": "Touch",
+					"sid": 424320130910543,
+					"parameters": {
+						"touch-number": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 998902687823441,
+					"parameters": {
+						"layout": "credits"
+					}
+				},
+				{
+					"id": "seek-to",
+					"objectClass": "Audio",
+					"sid": 690740330715536,
+					"parameters": {
+						"tag": "\"\"",
+						"position": "38.5"
+					}
+				}
+			],
+			"sid": 413712612965005,
+			"isOrBlock": true
+		}
+	],
+	"sid": 711798565005847
+}

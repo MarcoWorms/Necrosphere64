@@ -1,0 +1,65 @@
+{
+	"name": "Portal",
+	"plugin-id": "Sprite",
+	"sid": 286124415265482,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "type",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 493408700525232
+		},
+		{
+			"name": "ShouldMove",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 951946136973904
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "NoSave",
+			"name": "NoSave",
+			"sid": 998459428070744
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 436855616569038
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 4,
+						"height": 4,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9007333,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 583557256771425,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

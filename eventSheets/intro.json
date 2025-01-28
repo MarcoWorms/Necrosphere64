@@ -1,0 +1,885 @@
+{
+	"name": "intro",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "speedrunTools"
+		},
+		{
+			"eventType": "include",
+			"includeSheet": "gamepadSetter"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-button-pressed",
+					"objectClass": "Gamepad",
+					"sid": 222069027319924,
+					"parameters": {
+						"gamepad": "-1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 605103780704016,
+					"parameters": {
+						"variable": "activeGamepadId",
+						"value": "Gamepad.GamepadIndex"
+					}
+				}
+			],
+			"sid": 997842076477628
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 919885250574490
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 948875276656420,
+					"parameters": {
+						"key": 27
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-button-down",
+					"objectClass": "Gamepad",
+					"sid": 830264037996309,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "start-menu"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "has-nth-touch",
+					"objectClass": "Touch",
+					"sid": 649128893397655,
+					"parameters": {
+						"touch-number": "2"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-character-width",
+					"objectClass": "introtextfield2",
+					"sid": 596547385491384,
+					"parameters": {
+						"character": "\"abcdefghjklmnopqrstuvwxyz1234567890?-_~#°%+*\\/=<>\"",
+						"width": "4"
+					}
+				},
+				{
+					"id": "set-character-width",
+					"objectClass": "introtextfield2",
+					"sid": 857509743519803,
+					"parameters": {
+						"character": "\",;()[] \"",
+						"width": "3"
+					}
+				},
+				{
+					"id": "set-character-width",
+					"objectClass": "introtextfield2",
+					"sid": 487366511777075,
+					"parameters": {
+						"character": "\"|i.:!'\"",
+						"width": "2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield",
+					"sid": 367174106056508,
+					"disabled": true,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield2",
+					"sid": 517944543614826,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "IntroBackground",
+					"sid": 524114818000949,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "IntroBackground",
+					"sid": 931038278470160,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 175578825745581,
+					"parameters": {
+						"audio-file": "Opener_audio",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"opener\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 858815249750106,
+					"parameters": {
+						"variable": "nowPlaying",
+						"value": "\"Opener_audio\""
+					}
+				},
+				{
+					"id": "seek-to",
+					"objectClass": "Audio",
+					"sid": 914135399656399,
+					"parameters": {
+						"tag": "\"\"",
+						"position": "0.5"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 909845329820717,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introfar0",
+					"sid": 334925083566925,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introfar0",
+					"sid": 468432078302400
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 140978492291524,
+					"parameters": {
+						"name": "\"fadeIn\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 916589865798818,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introfar0",
+					"sid": 499810852482312,
+					"disabled": true,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 914982905180936,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 990969287666538,
+					"parameters": {
+						"name": "\"showText\"",
+						"parameter-n": [
+							"\"come on, champ, follow the plan. shoot me!\"",
+							"3"
+						]
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 730434700403492,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introfrontface",
+					"sid": 932247410211136,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introfrontface",
+					"sid": 951133477096264
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "introfrontface",
+					"sid": 167086039296367,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 103656400750990,
+					"parameters": {
+						"seconds": "1.8"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introfrontface",
+					"sid": 581689497818070,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 623956736023310,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 601537455725353,
+					"parameters": {
+						"name": "\"showText\"",
+						"parameter-n": [
+							"\"don't worry, nothing's gonna happen to me, remember?\"",
+							"3"
+						]
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 958140898424515,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introfrontface",
+					"sid": 871505742121515,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introfrontface",
+					"sid": 969769047191060
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 736198068336771,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introfrontface",
+					"sid": 376900318535808,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 327914031314339,
+					"parameters": {
+						"seconds": "0.5"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 933821792472641,
+					"parameters": {
+						"name": "\"showText\"",
+						"parameter-n": [
+							"\"don't chicken out, laszlo! i want to try this portal!\"",
+							"3"
+						]
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 707870691210395,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introside",
+					"sid": 267202333515171,
+					"disabled": true,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introside",
+					"sid": 263889822491676,
+					"disabled": true
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 845324356305951,
+					"disabled": true,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introeyes",
+					"sid": 120831576052318
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introeyes",
+					"sid": 535797772753335,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 316410443481694,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introeyes",
+					"sid": 602282122815431,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 295611948404899,
+					"parameters": {
+						"name": "\"showText\"",
+						"parameter-n": [
+							"\"do it now, laszlo! that's an order!\"",
+							"3"
+						]
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 668519804024005,
+					"parameters": {
+						"seconds": "3.5"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "IntroBackground",
+					"sid": 732354837378378
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introfar2",
+					"sid": 841893718377315,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introfar2",
+					"sid": 448151472587225
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introfar3",
+					"sid": 305194979453528,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introfar3",
+					"sid": 625698693342407
+				},
+				{
+					"id": "call-function",
+					"objectClass": "Function",
+					"sid": 859598079183588,
+					"parameters": {
+						"name": "\"fadeIn\"",
+						"parameter-n": []
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 499286520993913,
+					"parameters": {
+						"seconds": "2.5"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introWhiteFlash",
+					"sid": 400434537634932
+				},
+				{
+					"id": "set-size",
+					"objectClass": "introWhiteFlash",
+					"sid": 633724488644352,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introWhiteFlash",
+					"sid": 446484805754962,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 890337365838832,
+					"parameters": {
+						"seconds": "0.05"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introWhiteFlash",
+					"sid": 419749916766983,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introfar0",
+					"sid": 638719096003278,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "introfar3",
+					"sid": 204717559605227,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "necro64Intro",
+					"sid": 534574115327977
+				},
+				{
+					"id": "set-position",
+					"objectClass": "necro64Intro",
+					"sid": 224925190033234,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "necro64Intro",
+					"sid": 651962262070916
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "necro64Intro",
+					"sid": 986985569006763,
+					"parameters": {
+						"frame-number": "0"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "introfar2",
+					"sid": 473985003110757,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 216843400606362,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "start-animation",
+					"objectClass": "necro64Intro",
+					"sid": 266499048959745,
+					"parameters": {
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 399043311926357,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "necro64Intro",
+					"sid": 109717026710348,
+					"behaviorType": "Platform",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 693022802486073,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "Audio",
+					"sid": 192877100265765,
+					"parameters": {
+						"tag": "\"\"",
+						"db": "-100",
+						"duration": "3",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 202955925868912,
+					"parameters": {
+						"variable": "IntroFinished",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 708631374503752,
+					"parameters": {
+						"variable": "nowPlaying",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 763228122779549,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 662658780005029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 538759986960190,
+					"parameters": {
+						"name": "\"showText\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "IntroBackground",
+					"sid": 190247849106515
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introtextfield",
+					"sid": 590050015369013,
+					"disabled": true,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introtextfield2",
+					"sid": 937063373101936,
+					"parameters": {
+						"x": "32",
+						"y": "32"
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introtextfield",
+					"sid": 806445516190375,
+					"disabled": true
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "introtextfield2",
+					"sid": 549349016104350
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield",
+					"sid": 421868067741346,
+					"disabled": true,
+					"parameters": {
+						"text": "Function.Param(0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield2",
+					"sid": 892458463178626,
+					"parameters": {
+						"text": "Function.Param(0)"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 725813813642416,
+					"parameters": {
+						"seconds": "Function.Param(1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield",
+					"sid": 360762423751614,
+					"disabled": true,
+					"parameters": {
+						"text": "\"\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "introtextfield2",
+					"sid": 121323815779701,
+					"parameters": {
+						"text": "\"\""
+					}
+				}
+			],
+			"sid": 846189479560839
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-function",
+					"objectClass": "Function",
+					"sid": 328501197554601,
+					"parameters": {
+						"name": "\"fadeIn\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "introBlackFade",
+					"sid": 524771349739274
+				},
+				{
+					"id": "set-position",
+					"objectClass": "introBlackFade",
+					"sid": 894810309315878,
+					"parameters": {
+						"x": "0",
+						"y": "0"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "introBlackFade",
+					"sid": 343281037580432,
+					"parameters": {
+						"width": "64",
+						"height": "64"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "introBlackFade",
+					"sid": 680925354797645,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 334117895758467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 505144445218667,
+					"parameters": {
+						"interval-seconds": "0.1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "introBlackFade",
+					"sid": 981212744368245,
+					"parameters": {
+						"opacity": "introBlackFade.Opacity - 4"
+					}
+				}
+			],
+			"sid": 117449301475808
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 417995837585126,
+					"parameters": {
+						"key": 27
+					}
+				},
+				{
+					"id": "is-button-down",
+					"objectClass": "Gamepad",
+					"sid": 439824428880619,
+					"parameters": {
+						"gamepad": "activeGamepadId",
+						"button": "start-menu"
+					}
+				},
+				{
+					"id": "has-nth-touch",
+					"objectClass": "Touch",
+					"sid": 472155737593696,
+					"parameters": {
+						"touch-number": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 876011251164034,
+					"parameters": {
+						"tag": "\"opener\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 613096491006294,
+					"parameters": {
+						"variable": "IntroFinished",
+						"value": "true"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 828864722962367,
+					"parameters": {
+						"layout": "Layout 1"
+					}
+				}
+			],
+			"sid": 506943117023335,
+			"isOrBlock": true
+		}
+	],
+	"sid": 867199443469099
+}

@@ -1,0 +1,70 @@
+{
+	"name": "WallDestructibleRegen",
+	"plugin-id": "Sprite",
+	"sid": 374230715565486,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "regenTime",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 420426473603071
+		},
+		{
+			"name": "deleteOnBossDeath",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 970273866600597
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 859915357778075
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 415303053114072
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 4,
+						"height": 4,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6669050,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 331270519217118,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

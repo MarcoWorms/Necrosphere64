@@ -1,0 +1,61 @@
+{
+	"name": "DevPoint",
+	"plugin-id": "Sprite",
+	"sid": 344006982919371,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "save",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 416182534592754
+		},
+		{
+			"name": "startFinalCountdown",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 477044793560495
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2,
+						"height": 2,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8172770,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.5,
+								"y": 0.5
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 115852442649778,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

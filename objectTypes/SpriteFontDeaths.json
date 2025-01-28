@@ -1,0 +1,22 @@
+{
+	"name": "SpriteFontDeaths",
+	"plugin-id": "Spritefont2",
+	"sid": 208594637955228,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 40,
+		"height": 56,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 2003346,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

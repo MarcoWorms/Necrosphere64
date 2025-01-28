@@ -1,0 +1,51 @@
+{
+	"name": "prop_text_chasm",
+	"plugin-id": "Sprite",
+	"sid": 139848129160013,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 26,
+						"height": 21,
+						"originX": 0.46153846153846156,
+						"originY": 0.47619047619047616,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4121727,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5769230769230769,
+								0,
+								0.5769230769230769,
+								0.42857142857142855,
+								0,
+								0.42857142857142855
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 267311613740914,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
